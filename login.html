@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link style.css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+     <!-- Toastify -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Js main -->
+    <script src="assets/scripts/mainSignin.js" type="module"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- This is the Header -->
+    <header class="sticky top-0 z-10 bg-gradient-to-t from-[#8ab446] bg-[#cde591]">
+        <nav class="w-full px-6 py-4 lg:py-0">
+            <section class="justify-between lg:w-full lg:items-center lg:flex lg:px-10">
+                <!-- This is the mobile-first -> Menu Hamburguer -->
+                <div class="flex items-center justify-between py-1.5 lg:py-0">
+                    <button id="menu-button" class="lg:hidden">
+                        <i id="icon-change" class="fa-solid fa-bars text-2xl text-white"></i>
+                    </button>
+                    <a href="index.html">
+                        <h1 class="font-bold text-3xl text-[#072a16]">HELIA</h1>
+                    </a>
+                    <div id="icons-right" class="text-white flex space-x-4 lg:hidden">
+                        <a href="login.html">
+                            <i class="fa-regular fa-user text-2xl"></i>
+                        </a>
+                        <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                    </div>
+                </div>
+                <!-- This is the part of the list of sections on desktop screens and for the hamburger menu button -->
+                <div id="menu-list"
+                    class="p-10 flex-1 border-t-2 border-[#8ab446] justify-self-center pb-10 mt-8 lg:block lg:p-0 lg:mt-0 hidden lg:border-hidden">
+                    <ul class="h-screen lg:h-auto items-center justify-center lg:flex">
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="hotels.html">Hoteles</a>
+                        </li>
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="aboutUs.html">Quienes Somos</a>
+                        </li>
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="aplication.html">Sobre la Aplicación</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icons-right" class="hidden lg:text-white lg:flex lg:space-x-4 ">
+                    <a href="login.html">
+                        <i class="fa-regular fa-user text-2xl"></i>
+                    </a>
+                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <section class="">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <div class="w-full bg-[#8ab446] rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h3 class="text-xl font-bold leading-tight tracking-tight text-white md:text-2xl">
+                       Inicia Sesión
+                    </h2>
+                    <form id="login-form" class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo</label>
+                            <input type="email" name="email" id="login-email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                placeholder="name@company.com" required="">
+                        </div>
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+                            <input type="password" name="password" id="login-password" placeholder="••••••••"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                required="">
+                        </div>
+                        <button id="googleLogin"
+                            class="bg-white active:bg-blueGray-50 text-blueGray-700 px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                            type="button">
+                            <img alt="..." class="w-5 mr-1"
+                                src="https://demos.creative-tim.com/notus-js/assets/img/google.svg">Google </button>
+                        <button type="submit"
+                            class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-[#2d6b22]">Iniciar Sesión</button>
+                        <p class="text-sm font-light text-white">
+                            Aún no tienes cuenta? <a href="singup.html"
+                                class="font-medium text-primary-600 hover:underline dark:text-primary-500">Registrate</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is the landing page footer -->
+    <footer class="bg-[#8ab446] text-white">
+        <div class="container mx-auto pt-8 lg:mx-auto">
+            <div class="grid grid-cols-1 text-center md:text-start md:grid-cols-4 gap-8 md:justify-items-center">
+                <div>
+                    <h2 class="font-bold text-2xl text-[#2d6b22] mb-4">HELIA</h2>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Nuestro Propósito</h4>
+                    <p class="px-12 md:px-0">Perimitir a los usuarios encontrar el Alojamiento Ideal, mostrando toda la información de los alojamientos con precios atractivos y competitivos.</p>
+                </div>
+                <div class="md:pl-10">
+                    <h4 class="font-bold mb-4">Contactanos en</h4>
+                    <div class="flex items-center text-2xl justify-center md:justify-normal">
+                        <i class="fa-brands fa-instagram mr-4"></i>
+                        <i class="fa-brands fa-facebook mr-4"></i>
+                        <i class="fa-brands fa-linkedin mr-4"></i>
+                        <i class="fa-brands fa-youtube mr-4"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h4 class="font-bold">Moneda</h4>
+                    <div>
+                        <!-- <i class="fa-solid fa-globe"></i> -->
+                        <img src="assets/images/PEN-flag.svg">
+                        <p>Pen</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white mt-8">
+            <p class="text-center">&copy; 2023 HELIA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

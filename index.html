@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Este es una landing page que contempla la oferta de valor, caracteristicas y funcionalidades de la App Helia." />
+    <meta name="keywords" content="Reservaciones, alquileres, hoteles, resorts, villas, departamentos,europa">
+    <meta name="author" content="u202120632 - Raul Gonzalo Pingo Amaya" /> <!--Codido del estudiante-->
+    <meta name="copyrigth" content="Todos los derechos reservados - 2023" />
+    <!-- Sirve para escalar el contenido dependiendo el dispositivo que use el usuario, por ejemplo: celular, laptop, computadora, etc-->
+    <meta name="application-name" content="Helia Inc">
+    <meta name="robots" content="index" />
+    <meta name="robots" content="noindex" />
+    <meta name="robots" content="follow" />
+    <meta name="robots" content="nofollow" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Link iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Title for the landing page -->
+    <title>Helia Inc</title>
+</head>
+
+<body class="bg-[#ffffff]">
+    <!-- This is the Header -->
+    <header class="sticky top-0 z-10 bg-gradient-to-t from-[#8ab446] bg-[#cde591]">
+        <nav class="w-full px-6 py-4 lg:py-0">
+            <section class="justify-between lg:w-full lg:items-center lg:flex lg:px-10">
+                <!-- This is the mobile-first -> Menu Hamburguer -->
+                <div class="flex items-center justify-between py-1.5 lg:py-0">
+                    <button id="menu-button" class="lg:hidden">
+                        <i id="icon-change" class="fa-solid fa-bars text-2xl text-white"></i>
+                    </button>
+                    <a href="index.html">
+                        <h1 class="font-bold text-3xl text-[#072a16]">HELIA</h1>
+                    </a>
+                    <div id="icons-right" class="text-white flex space-x-4 lg:hidden">
+                        <a href="login.html">
+                            <i class="fa-regular fa-user text-2xl"></i>
+                        </a>
+                        <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                    </div>
+                </div>
+                <!-- This is the part of the list of sections on desktop screens and for the hamburger menu button -->
+                <div id="menu-list"
+                    class="p-10 flex-1 border-t-2 border-[#8ab446] justify-self-center pb-10 mt-8 lg:block lg:p-0 lg:mt-0 hidden lg:border-hidden">
+                    <ul class="h-screen lg:h-auto items-center justify-center lg:flex">
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="hotels.html">hoteles</a>
+                        </li>
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="aboutUs.html">Quienes Somos</a>
+                        </li>
+                        <li
+                            class="text-xl uppercase text-[#2d6b22] py-4 px-6 text-center border-b-2 lg:border-b-0  hover:bg-[#8ab446]  border-[#8ab446] lg:hover:text-[#ffffff] lg:hover:bg-transparent lg:relative lg:text-lg">
+                            <a href="aplication.html">Sobre la Aplicación</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icons-right" class="hidden lg:text-white lg:flex lg:space-x-4 ">
+                    <a href="login.html">
+                        <i class="fa-regular fa-user text-2xl"></i>
+                    </a>
+                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main class="flex w-full flex-col items-center justify-between">
+        <!-- This is the HERO -> Landing Page -->
+        <section class="relative isolate overflow-hidden w-full">
+            <img src="assets/images/heroDesktop.jpeg" alt="Helia front page"
+                class="hidden md:block absolute inset-0 -z-10 h-full w-full object-cover fade-in">
+            <img src="assets/images/Hero2.jpeg" alt="Helia front page"
+                class="lg:hidden absolute inset-0 -z-10 h-full w-full object-cover fade-in">
+            <div class="mx-2 max-w-2xl py-36 md:py-56 lg:py-56">
+                <div class="px-2 lg:px-3">
+                    <h2 class="glow-effect text-3xl font-bold text-[#acc864] lg:text-5xl lg:mx-8">
+                        HELIA
+                    </h2>
+                    <p
+                        class="typing mt-9 text-lg text-[#2d6b22] w-36 md:w-1/2 md:text-2xl lg:text-3xl lg:w-1/2 lg:lg:mx-8">
+                        “Alojamientos únicos en todo el mundo para escapar de la
+                        rutina.”
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- This is the carousel for the some hotels -->
+        <div class="max-w-2xl mx-auto pt-10 pb-20">
+            <h2 class="text-3xl font-bold text-center mb-10 text-[#acc864]">Algunos de nuestros hoteles</h2>
+            <div id="default-carousel" class="relative -z-0 md:z-0" data-carousel="static">
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96 xl:w-96 2xl:w-112">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer
+                            Slide</span>
+                        <img src="assets/images/hotel1.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            alt="Hotel de Rusia">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/images/hotel2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            alt="Hotel de Alemania">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/images/hotel3.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            alt="Hotel de España">
+                    </div>
+                </div>
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#8ab446] group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="hidden">Anterior</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#8ab446] group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="hidden">Siguiente</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <!-- This is the section Quienes Somos -->
+        <section class="flex flex-col items-center justify-center text-center py-16 lg:py-32 bg-[#d3e29d] w-full">
+            <h2 class="text-[#acc864] font-bold text-3xl lg:text-5xl">Quienes Somos</h2>
+            <div class="max-w-lg mx-auto py-8 lg:max-w-3xl">
+                <p class="text-[#2d6b22] text-center text-lg md:text-2xl lg:text-3xl">Somos una startup que está
+                    buscando satisfacer la demanda de
+                    reservaciones de Alojamientos como son Hoteles, Resorts, Villas y Departamentos en toda Europa.</p>
+            </div>
+            <a href="aboutUs.html">
+                <button
+                    class="mt-4 bg-[#8ab446] hover:bg-[#f5785bd1] text-white rounded-full px-6 py-2 block transition duration-300 ease-in-out text-xl hover:bg-white hover:text-[#8ab446] border-[#8ab446] border-2 lg:text-2xl">Ver
+                    más</button>
+            </a>
+        </section>
+        <!-- Download the app -->
+        <section class="relative w-full md:my-28">
+            <div class="flex flex-col md:flex-row md:justify-center">
+                <img src="assets/images/app.png" alt="Download the app" class="object-cover md:rounded-2xl">
+                <div
+                    class="absolute bottom-0 w-1/2 pb-4 pl-6 md:flex md:flex-col md:justify-center md:static lg:text-center lg:pl-6 md:px-10">
+                    <h2 class="text-[#acc864] font-bold text-3xl lg:text-5xl bold">Descarga la aplicación móvil</h2>
+                    <p class="hidden text-[#2d6b22] md:block md:py-6 md:text-2xl">¡Descarga nuestra app móvil HELIA
+                        para disfrutar de la mejor experiencia en reservas de alojamiento! Nuestra aplicación está
+                        diseñada para satisfacer las necesidades de dos segmentos importantes: los huéspedes y los
+                        proveedores de alojamiento.</p>
+                    <img src="assets/images/googleplay.svg" alt="Download the app by googleplay" class="mt-4 md:h-16">
+                    <img src="assets/images/appstore.svg" alt="Download the app by appstore" class="mt-2 md:h-16">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- This is the landing page footer -->
+    <footer class="bg-[#8ab446] text-white">
+        <div class="container mx-auto pt-8 lg:mx-auto">
+            <div class="grid grid-cols-1 text-center md:text-start md:grid-cols-4 gap-8 md:justify-items-center">
+                <div>
+                    <h2 class="font-bold text-2xl text-[#072a16] mb-4">HELIA</h2>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Nuestro Propósito</h4>
+                    <p class="px-12 md:px-0 "> Perimitir a los usuarios encontrar el Alojamiento Ideal, mostrando toda
+                        la información de los
+                        alojamientos con precios atractivos y competitivos.</p>
+                </div>
+                <div class="md:pl-10">
+                    <h4 class="font-bold mb-4">Contactanos en</h4>
+                    <div class="flex items-center text-2xl justify-center md:justify-normal">
+                        <i class="fa-brands fa-instagram mr-4"></i>
+                        <i class="fa-brands fa-facebook mr-4"></i>
+                        <i class="fa-brands fa-linkedin mr-4"></i>
+                        <i class="fa-brands fa-youtube mr-4"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h4 class="font-bold">Moneda</h4>
+                    <div>
+                        <!-- <i class="fa-solid fa-globe"></i> -->
+                        <img src="assets/images/PEN-flag.svg" alt="Peru">
+                        <p>Pen</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white mt-8">
+            <p class="text-center">&copy; 2023 HELIA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/navBar.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</body>
+</body>
+
+</html>
