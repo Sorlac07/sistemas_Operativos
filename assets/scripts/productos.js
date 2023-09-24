@@ -16,7 +16,7 @@ fetch('http://172.191.145.152:3000/obtener-datos')
           <div class='mt-4 px-6'>
           <div class='flex items-center flex-col text-[26px]'>
           <h2 class="text-[#acc864]">${product.title}</h2>
-          <p class="text-[#2d6b22]">${product.price} Є</p>
+          <p class="text-[#2d6b22]"> S/.${product.price}</p>
           </div>
           <button
           class='bg-[#8ab446] text-white py-4 px-10 mt-4 block mx-auto hover:bg-white hover:text-[#8ab446] rounded-2xl border-[#50F5431AC2D8] border-2 ease-in-out duration-300 border-[#8ab446]'
