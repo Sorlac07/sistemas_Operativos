@@ -30,7 +30,3 @@ fetch('http://localhost:3000/obtener-datos')
   .catch((error) => {
     console.error(error);
   });
-
-
-
-  
