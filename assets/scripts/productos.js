@@ -1,6 +1,6 @@
 const hotelsList = document.querySelector("#productos-list");
 
-fetch('http://localhost:3000/obtener-datos')
+fetch('http://172.191.145.152:3000/obtener-datos')
   .then((response) => {
     if (!response.ok) {
       throw new Error('No se pudo obtener los datos');
